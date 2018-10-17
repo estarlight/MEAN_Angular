@@ -1,0 +1,26 @@
+
+<div style="text-align:center">
+  <h1>Restful Tasks API</h1>
+  
+
+  <h2>All the Tasks:</h2>
+
+  <button (click)="clickAllTasks()" >Get All Tasks</button>
+
+    <ul>
+      <li *ngFor="let task of tasks">{{task.title}} <button (click)="clickOneTask(task._id)">Show</button></li>
+        
+    </ul>
+
+    <p>{{one_task.title}} - {{one_task.description}}</p>
+
+
+    <!-- <h2>The Third Task:</h2>
+
+    <ul>
+      <li>{{tasks[2].title}} - {{tasks[2].description}}</li>
+    </ul> -->
+
+
+
+    </div>
